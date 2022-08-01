@@ -1,36 +1,36 @@
 @font-face {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-weight: 300;
     font-display: swap;
-    src: url("./assets/fonts/Poppins-Light.woff2") format("woff2");
+    src: url("./assets/fonts/Montserrat-Light.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-weight: 400;
     font-display: swap;
-    src: url("./assets/fonts/Poppins-Regular.woff2") format("woff2");
+    src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-weight: 500;
     font-display: swap;
-    src: url("./assets/fonts/Poppins-Medium.woff2") format("woff2");
+    src: url("./assets/fonts/Montserrat-Medium.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-weight: 600;
     font-display: swap;
-    src: url("./assets/fonts/Poppins-SemiBold.woff2") format("woff2");
+    src: url("./assets/fonts/Montserrat-SemiBold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-weight: 700;
     font-display: swap;
-    src: url("./assets/fonts/Poppins-Bold.woff2") format("woff2");
+    src: url("./assets/fonts/Montserrat-Bold.woff2") format("woff2");
 }
 
 * {
@@ -44,11 +44,11 @@
     --secondary-color: #5EB977;
     --grey: #A1A1A1;
     --white: #FFF;
-    --black: 212121;
+    --black: #212121;
 }
 
 body {
-    font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Montserrat", "Helvetica", sans-serif;
     font-weight: 500;
     font-size: 16px;
     background-color: var(--black);
