@@ -1,0 +1,24 @@
+.html-tag {
+    display: block;
+    font-family: "Consolas", "Fira Code", "JetBrains Mono", "Source Code Pro", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--grey);
+    transform: translateX(-15px);
+}
+
+.html-tag__opening {
+    margin-bottom: 10px;
+}
+
+.html-tag__closing {
+    margin-top: 10px;
+}
+
+.html-tag__class-attribute {
+    color: var(--primary-color);
+}
+
+.html-tag__class-content {
+    color: var(--secondary-color);
+}

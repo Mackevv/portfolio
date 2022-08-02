@@ -1,9 +1,10 @@
 import React from 'react';
+import HeroSection from "../components/HeroSection/HeroSection";
 import "./Home.css";
 
 function Home() {
   return (
-    <div className="Home">Hello world!</div>
+    <HeroSection />
   );
 }
 

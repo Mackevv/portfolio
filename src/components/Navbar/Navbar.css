@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link {
+    font-family: "Consolas", "Fira Code", "Source Code Pro", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.2s color ease-in;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    transition: 0.2s color ease-out;
+}
