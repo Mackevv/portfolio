@@ -32,6 +32,11 @@
     font-size: 22px;
 }
 
+/* Spinning arcs around logo */
+.hero__logo-container {
+    position: relative;
+}
+
 .hero__logo {
     display: flex;
     justify-content: center;
@@ -40,4 +45,99 @@
     height: 250px;
     border: 1px solid #fff;
     border-radius: 50%;
+}
+
+.inside-spin,
+.outside-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.inside-spin {
+    animation: spin 15s linear infinite;
+}
+
+.outside-spin {
+    animation: spin 15s linear infinite reverse;
+}
+
+.inside-arc,
+.outside-arc {
+    position: absolute;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.inside-arc {
+    width: 295px;
+    height: 295px;
+    transform: translate(-50%, -50%) rotate(20deg);
+}
+
+.inside-arc-right {
+    border-color: transparent #fff transparent transparent;
+}
+
+.inside-arc-left {
+    border-color: transparent transparent transparent #fff;
+}
+
+.outside-arc {
+    width: 340px;
+    height: 340px;
+    border-color: #fff transparent transparent transparent;
+    transform: translate(-50%, -50%);
+}
+
+.inside-ball,
+.outside-ball {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgba(41, 136, 255, 0.5);
+}
+
+.inside-ball-left__start {
+    transform: translate(-50%, -50%) translate(-125px, 60px);
+}
+
+.inside-ball-left__end {
+    transform: translate(-50%, -50%) translate(-50px, -133px);
+}
+
+.inside-ball-right__start {
+    transform: translate(-50%, -50%) translate(143px, -63px);
+}
+
+.inside-ball-right__end {
+    transform: translate(-50%, -50%) translate(70px, 133px);
+}
+
+.outside-ball__start {
+    transform: translate(-50%, -50%) translate(-110px, -120px);
+}
+
+.outside-ball__end {
+    transform: translate(-50%, -50%) translate(129px, -120px);
+}
+
+.inside-ball div,
+.outside-ball div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
 }

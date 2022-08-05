@@ -24,6 +24,33 @@ function HeroSection() {
           <div className="hero__logo">
             <Logo />
           </div>
+          <div className="inside-spin">
+            <div className="inside-arc inside-arc-left"></div>
+            <div className="inside-arc inside-arc-right"></div>
+
+            <div className="inside-ball inside-ball-left__start">
+              <div></div>
+            </div>
+            <div className="inside-ball inside-ball-left__end">
+              <div></div>
+            </div>
+            <div className="inside-ball inside-ball-right__start">
+              <div></div>
+            </div>
+            <div className="inside-ball inside-ball-right__end">
+              <div></div>
+            </div>
+          </div>
+          <div className="outside-spin">
+            <div className="outside-arc"></div>
+
+            <div className="outside-ball outside-ball__start">
+              <div></div>
+            </div>
+            <div className="outside-ball outside-ball__end">
+              <div></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
