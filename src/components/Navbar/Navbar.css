@@ -19,15 +19,57 @@
 }
 
 .nav-link {
+    position: relative;
     font-family: "Consolas", "Fira Code", "Source Code Pro", sans-serif;
     font-weight: normal;
     font-size: 18px;
     color: var(--white);
     text-decoration: none;
-    transition: 0.2s color ease-in;
+    transition: 0.2s all ease;
+}
+
+.nav-link::before,
+.nav-link::after {
+    background-color: var(--primary-color);
+    opacity: 0;
+    visibility: visible;
+    transition: 0.4s transform ease, 0.2s opacity ease;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    width: 40px;
+    height: 2px;
+    transform: translateX(60px);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    transform: translateX(60px) rotate(45deg);
 }
 
 .nav-link:hover {
     color: var(--primary-color);
-    transition: 0.2s color ease-out;
+    margin-left: 40px;
+    transition: 0.4s all ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: translateX(-10px) rotate(45deg);
+    opacity: 1;
+    visibility: visible;
+    transition: 0.4s transform ease, 0.2s opacity ease;
+}
+
+.nav-link:hover::before {
+    transform: translateX(-10px);
 }
