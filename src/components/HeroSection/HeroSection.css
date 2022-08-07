@@ -16,7 +16,7 @@
 }
 
 .hero__text {
-    width: 620px;
+    max-width: 620px;
 }
 
 .hero__text strong {
@@ -26,6 +26,10 @@
 
 .hero-title {
     font-size: 50px;
+}
+
+.hero-title + code {
+    margin-bottom: 30px;
 }
 
 .hero-title ~ p {
@@ -140,4 +144,33 @@
 
 @keyframes spin {
     100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 1370px) {
+    .hero {
+        gap: 80px;
+    }
+
+    .hero__logo-container {
+        transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 1185px) {
+    .hero {
+        grid-auto-flow: row;
+        gap: 0;
+    }
+
+    .hero__text {
+        margin: 0 40px;
+    }
+
+    .hero-title {
+        font-size: clamp(38px, 8vw, 50px);
+    }
+
+    .hero__text p {
+        font-size: clamp(18px, 4vw, 22px);
+    }
 }
