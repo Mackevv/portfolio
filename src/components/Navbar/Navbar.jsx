@@ -6,6 +6,7 @@ function Navbar() {
 
   const handleClick = () => {
     setMenu(!menu);
+    document.body.classList.toggle('menu-open')
   }
 
   return (
