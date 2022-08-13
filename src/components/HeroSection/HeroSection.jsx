@@ -1,21 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
+import useWindowResize from "../../hooks/useWindowResize";
 import HTMLTag from "../HTMLTag/HTMLTag";
 import "./HeroSection.css";
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 function HeroSection() {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  }, [width]);
+  const width = useWindowResize(window.innerWidth);
 
   return (
     <div className="hero__container">
