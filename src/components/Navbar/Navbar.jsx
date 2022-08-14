@@ -18,8 +18,8 @@ function Navbar() {
           <li><a href="#" className="nav-link">&lt;Projects /&gt;</a></li>
           <li><a href="#" className="nav-link">&lt;Contact /&gt;</a></li>
         </ul>
-        <button className="navbar-menu" onClick={handleClick}>
-          <span>&lt;{menu ? "Close" : "Open"} /&gt;</span>
+        <button className="burger" onClick={handleClick}>
+          <span className="burger-bar"></span>
         </button>
       </nav>
     </header>
