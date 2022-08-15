@@ -184,14 +184,4 @@
     .menu-open .burger-bar::after {
         transform: rotate(-45deg);
     }
-
-    .nav-link::after,
-    .nav-link:hover::after {
-        transform: translate(-8px, 2px) rotate(45deg);
-    }
-
-    .nav-link::before,
-    .nav-link:hover::before {
-        transform: translate(-8px, 2px);
-    }
 }
