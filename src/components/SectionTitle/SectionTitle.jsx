@@ -2,8 +2,8 @@ import React from 'react';
 import HTMLTag from "../HTMLTag/HTMLTag";
 import "./SectionTitle.css";
 
-function SectionTitle({ sectionName, className }) {
-  const words = sectionName.split(' ');
+function SectionTitle({ children, className }) {
+  const words = children.split(' ');
 
   return (
     <div className={className}>

@@ -28,7 +28,7 @@ function Home() {
               </p>
             </HTMLTag>
           </div>
-          <SectionTitle sectionName="About me" className="about__title"/>
+          <SectionTitle className="about__title">About me</SectionTitle>
         </div>
         <TransitionLine flip={true} />
       </div>
