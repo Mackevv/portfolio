@@ -1,5 +1,5 @@
 .html-tag {
-    display: block;
+    display: inline-block;
     font-family: "Consolas", "Fira Code", "JetBrains Mono", "Source Code Pro", sans-serif;
     font-size: 18px;
     font-weight: normal;

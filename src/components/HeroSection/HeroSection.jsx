@@ -17,6 +17,7 @@ function HeroSection() {
               My name is <strong>Macé Kevin</strong>
             </h1>
           </HTMLTag>
+          <br/>
           <HTMLTag name="p">
             <p>
               I am a french self-taught developer interested in <strong>programming</strong> and <strong>new technologies</strong>
