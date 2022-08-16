@@ -3,6 +3,7 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import HTMLTag from "../../components/HTMLTag/HTMLTag";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import TransitionLine from "../../components/TransitionLine/TransitionLine";
+import ContactSection from "../../components/ContactSection/ContactSection";
 import "./Home.css";
 
 function Home() {
@@ -31,6 +32,7 @@ function Home() {
           <SectionTitle className="about__title">About me</SectionTitle>
         </div>
         <TransitionLine flip={true} />
+        <ContactSection/>
       </div>
     </>
   );
