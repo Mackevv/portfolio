@@ -70,7 +70,7 @@ p {
     transition: background 0.3s;
 }
 
-.page-wrapper {
+#page-wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -78,7 +78,7 @@ p {
     overflow: hidden;
 }
 
-.page-wrapper::before {
+#page-wrapper::before {
     content: "";
     position: absolute;
     top: -30px;
@@ -93,7 +93,7 @@ p {
     z-index: -1;
 }
 
-.page-wrapper::after {
+#page-wrapper::after {
     content: "";
     position: absolute;
     right: -20px;
@@ -109,7 +109,7 @@ p {
 }
 
 @media only screen and (max-width: 900px) {
-    .page-wrapper::after {
+    #page-wrapper::after {
         content: none
     }
 }
