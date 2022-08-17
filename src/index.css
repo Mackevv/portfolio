@@ -90,6 +90,7 @@ p {
     background-repeat: repeat-y;
     background-size: clamp(280px, 38vw, 404px);
     pointer-events: none;
+    z-index: -1;
 }
 
 .page-wrapper::after {
@@ -104,6 +105,7 @@ p {
     background-position: right;
     background-size: clamp(280px, 38vw, 404px);
     pointer-events: none;
+    z-index: -1;
 }
 
 @media only screen and (max-width: 900px) {
