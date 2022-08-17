@@ -17,9 +17,6 @@
 }
 
 .contact__social-media li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     width: 80px;
     height: 80px;
@@ -68,6 +65,14 @@
 
 .contact__social-media .instagram:hover .icon-instagram {
     fill: url(#instagram-gradient);
+}
+
+.contact__social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .contact__form {
