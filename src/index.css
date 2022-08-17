@@ -96,6 +96,7 @@ p {
 #page-wrapper::after {
     content: "";
     position: absolute;
+    bottom: 400px;
     right: -20px;
     width: 100%;
     height: 100%;
