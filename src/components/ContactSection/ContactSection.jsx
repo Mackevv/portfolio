@@ -1,10 +1,11 @@
 import React, { useState, useRef } from 'react';
 import emailjs from "@emailjs/browser";
+import validator from "../../utils/validator";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import HTMLTag from "../HTMLTag/HTMLTag";
 import Icon from "../Icon";
-import "./ContactSection.css";
 import Button from "../Button/Button";
+import "./ContactSection.css";
 
 function ContactSection() {
   const formRef = useRef();
@@ -18,10 +19,14 @@ function ContactSection() {
     email: "",
     message: ""
   });
+  const [errors, setErrors] = useState({});
   const [disabled, setDisabled] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setErrors(validator.contactForm(contact));
+    if (errors) return;
 
     const btn = e.target.children[3];
     btn.textContent = "Sending...";
@@ -29,15 +34,18 @@ function ContactSection() {
     emailjs.sendForm(serviceId, templateId, formRef.current, publicKey)
       .then((result) => {
         alert("Your email has been successfully sent!")
+
         setContact({
           name: "",
           email: "",
           message: ""
         });
+
         setDisabled(true);
         btn.textContent = "Sent";
       }, (error) => {
         alert('An error occurred')
+
         setDisabled(false);
         btn.textContent = "Send";
       });
@@ -90,6 +98,7 @@ function ContactSection() {
           <form ref={formRef} onSubmit={handleSubmit}>
             <div className="form-field">
               <label htmlFor="name">Name</label>
+              {errors.name && <div className="form-errors">{errors.name}</div>}
               <input type="text"
                      name="name"
                      placeholder="John Doe"
@@ -100,6 +109,7 @@ function ContactSection() {
             </div>
             <div className="form-field">
               <label htmlFor="email">Email</label>
+              {errors.email && <div className="form-errors">{errors.email}</div>}
               <input
                 type="email"
                 name="email"
@@ -111,6 +121,7 @@ function ContactSection() {
             </div>
             <div className="form-field">
               <label htmlFor="message">Message</label>
+              {errors.message && <div className="form-errors">{errors.message}</div>}
               <textarea
                 name="message"
                 placeholder="Hello! I'm contacting you because..."
