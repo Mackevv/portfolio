@@ -16,7 +16,7 @@ function Navbar() {
           <li><a href="#" className="nav-link">&lt;Home /&gt;</a></li>
           <li><a href="#" className="nav-link">&lt;About /&gt;</a></li>
           <li><a href="#" className="nav-link">&lt;Projects /&gt;</a></li>
-          <li><a href="#" className="nav-link">&lt;Contact /&gt;</a></li>
+          <li><a href="#contact" className="nav-link">&lt;Contact /&gt;</a></li>
         </ul>
         <button className="burger" onClick={handleClick}>
           <span className="burger-bar"></span>

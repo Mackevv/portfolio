@@ -38,6 +38,10 @@
     --container-width: calc(100% - var(--container-padding) * 2);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", "Helvetica", sans-serif;
     font-weight: 300;

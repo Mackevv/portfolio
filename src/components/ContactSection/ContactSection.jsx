@@ -49,7 +49,7 @@ function ContactSection() {
   }
 
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div>
         <SectionTitle className="contact__title">Contact me</SectionTitle>
         <div className="contact__social-media--container">
