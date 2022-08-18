@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <HTMLTag name="footer">
         <div className="footer-email">
-          <a href="mailto: mn.kevin31@gmail.com">
+          <a href="#contact">
             <Icon name="share" size={18} /> mn.kevin31@gmail.com
           </a>
         </div>

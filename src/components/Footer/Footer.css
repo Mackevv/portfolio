@@ -19,6 +19,7 @@
 }
 
 .footer-email svg {
+    fill: var(--white);
     transform: translateY(5px);
     margin-right: 5px;
 }
