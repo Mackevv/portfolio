@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import validator from "../../utils/validator";
 import SectionTitle from "../SectionTitle/SectionTitle";
@@ -19,16 +19,13 @@ function ContactSection() {
     email: "",
     message: ""
   });
-  const [errors, setErrors] = useState({});
+
+  const initialErrors = {};
+  const [errors, setErrors] = useState(initialErrors);
   const [disabled, setDisabled] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setErrors(validator.contactForm(contact));
-    if (errors) return;
-
-    const btn = e.target.children[3];
+  const sendEmail = () => {
+    const btn = document.querySelector('.contact__form button');
     btn.textContent = "Sending...";
 
     emailjs.sendForm(serviceId, templateId, formRef.current, publicKey)
@@ -45,16 +42,26 @@ function ContactSection() {
         btn.textContent = "Sent";
       }, (error) => {
         alert('An error occurred')
-
-        setDisabled(false);
         btn.textContent = "Send";
       });
   }
 
   const handleChange = (e) => {
-    e.persist();
-    setContact(contact => ({...contact, [e.target.name]: e.target.value}));
+    e.persist()
+    setContact(values => ({...values, [e.target.name]: e.target.value}));
   }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setErrors(validator.contactForm(contact));
+  }
+
+  useEffect(() => {
+    if (errors !== initialErrors && Object.keys(errors).length === 0) {
+      sendEmail();
+    }
+  }, [errors]);
+
 
   return (
     <div id="contact" className="contact">
