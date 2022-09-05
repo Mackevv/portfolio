@@ -12,7 +12,7 @@ function Home() {
       <HeroSection />
       <div className="container">
         <TransitionLine />
-        <div className="about">
+        <div className="about-section">
           <div className="about__content">
             <HTMLTag name="p">
               <p>

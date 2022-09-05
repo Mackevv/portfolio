@@ -1,22 +1,30 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
+  const location = useLocation();
 
   const handleClick = () => {
-    setMenu(!menu);
-    document.body.classList.toggle('menu-open')
+    if (window.innerWidth < 630) {
+      setMenu(!menu);
+      document.body.classList.toggle('menu-open')
+    }
   }
 
   return (
-    <header className="header">
+    <header
+      className="header"
+      style={{ position: location.pathname === "/" ? "absolute" : "relative" }}
+    >
       <nav className={`navbar${menu ? ' menu-open' : ''}`}>
         <ul>
-          <li><a href="#" className="nav-link">&lt;Home /&gt;</a></li>
-          <li><a href="#" className="nav-link">&lt;About /&gt;</a></li>
-          <li><a href="#" className="nav-link">&lt;Projects /&gt;</a></li>
-          <li><a href="#contact" className="nav-link">&lt;Contact /&gt;</a></li>
+          <li><Link to="/" className="nav-link" onClick={handleClick}>&lt;Home /&gt;</Link></li>
+          <li><Link to="/about" className="nav-link" onClick={handleClick}>&lt;About /&gt;</Link></li>
+          <li><Link to="/projects" className="nav-link" onClick={handleClick}>&lt;Projects /&gt;</Link></li>
+          <li><HashLink to="/#contact" className="nav-link" onClick={handleClick}>&lt;Contact /&gt;</HashLink></li>
         </ul>
         <button className="burger" onClick={handleClick}>
           <span className="burger-bar"></span>
