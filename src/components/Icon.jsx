@@ -4,7 +4,7 @@ function Icon({ name, size = null , ...rest}) {
   const sizes = size ? { width: size, height: size} : '';
 
   return (
-    <svg className={`icon-${name}`} {...sizes} {...rest}>
+    <svg className="icon" {...sizes} {...rest}>
       <use xlinkHref={`/sprite.svg#${name}`}></use>
     </svg >
   )

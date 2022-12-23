@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HTMLTag from "../../components/HTMLTag/HTMLTag";
+import TransitionLine from "../../components/TransitionLine/TransitionLine";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import TechStack from "./TechStack";
 import "./About.css";
 
 function About() {
+  const [skills, setSkills] = useState(true)
+
   return (
     <div className="container">
-      <div className="about">
+      <section className="about">
         <HTMLTag name="h1" className="hero-title">
           <h1>About <strong>me</strong></h1>
         </HTMLTag>
@@ -24,7 +29,45 @@ function About() {
             Donec pulvinar vitae dui sit amet lobortis.
           </p>
         </HTMLTag>
-      </div>
+      </section>
+      <TransitionLine />
+      <section className="skills">
+        <div className="skills-heading">
+          <SectionTitle className="skills-heading__title">My skills</SectionTitle>
+          <HTMLTag name="p">
+            <p className="skills-heading__description">
+              Here are some&nbsp;
+              {skills ?
+              "programming languages and technologies I have already work with" : "tools that I use on a daily basis to help me in my work"
+              }.
+            </p>
+          </HTMLTag>
+        </div>
+        <div className="skills-tech">
+          <div className="skills-tech__toggle">
+            <button
+              className={skills ? 'selected' : ''}
+              onClick={() => setSkills(true)}
+            >
+              Programming
+            </button>
+            <button
+              className={!skills ? 'selected' : ''}
+              onClick={() => setSkills(false)}
+            >
+              Tools
+            </button>
+          </div>
+          <TechStack skills={skills}/>
+        </div>
+      </section>
+      <TransitionLine flip={true} />
+      <section className="experience">
+        <SectionTitle>My experience</SectionTitle>
+        <div>
+          <span className="wip">Work in progress... 🚧</span>
+        </div>
+      </section>
     </div>
   );
 }
