@@ -1,6 +1,6 @@
 import React from 'react';
-import HTMLTag from "../HTMLTag/HTMLTag";
-import Icon from "../Icon";
+import HTMLTag from "components/HTMLTag/HTMLTag";
+import Icon from "components/Icon";
 import "./Footer.css";
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
       <HTMLTag name="footer">
         <div className="footer-email">
           <a href="#contact">
-            <Icon name="share" size={18} /> mn.kevin31@gmail.com
+            <Icon name="share" size={18} /> By email
           </a>
         </div>
         <div className="footer-legal">

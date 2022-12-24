@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from "@emailjs/browser";
-import validator from "../../utils/validator";
-import SectionTitle from "../SectionTitle/SectionTitle";
-import HTMLTag from "../HTMLTag/HTMLTag";
-import Icon from "../Icon";
-import Button from "../Button/Button";
+import validator from "utils/validator";
+import SectionTitle from "components/SectionTitle/SectionTitle";
+import HTMLTag from "components/HTMLTag/HTMLTag";
+import Icon from "components/Icon";
+import Button from "components/Button/Button";
 import "./ContactSection.css";
 
 function ContactSection() {

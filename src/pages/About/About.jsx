@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import HTMLTag from "../../components/HTMLTag/HTMLTag";
-import TransitionLine from "../../components/TransitionLine/TransitionLine";
-import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import HTMLTag from "components/HTMLTag/HTMLTag";
+import TransitionLine from "components/TransitionLine/TransitionLine";
+import SectionTitle from "components/SectionTitle/SectionTitle";
 import TechStack from "./TechStack";
 import "./About.css";
 

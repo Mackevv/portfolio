@@ -1,8 +1,8 @@
 import React from 'react';
-import Icon from "../../components/Icon";
-import Php from "../../assets/icons/php.png";
-import PhpStorm from "../../assets/icons/phpstorm.png";
-import WebStorm from "../../assets/icons/webstorm.png";
+import Icon from "components/Icon";
+import Php from "assets/icons/php.png";
+import PhpStorm from "assets/icons/phpstorm.png";
+import WebStorm from "assets/icons/webstorm.png";
 
 
 function Tools() {

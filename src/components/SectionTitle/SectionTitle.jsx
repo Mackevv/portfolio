@@ -1,5 +1,5 @@
 import React from 'react';
-import HTMLTag from "../HTMLTag/HTMLTag";
+import HTMLTag from "components/HTMLTag/HTMLTag";
 import "./SectionTitle.css";
 
 function SectionTitle({ children, className }) {
