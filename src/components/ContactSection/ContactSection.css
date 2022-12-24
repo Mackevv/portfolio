@@ -58,12 +58,12 @@
     transition: all 0.3s;
 }
 
-.contact__social-media .twitter:hover .icon-twitter {
+.contact__social-media .twitter:hover svg {
     fill: #1DA1F2;
     transition: fill 0.3s ease;
 }
 
-.contact__social-media .instagram:hover .icon-instagram {
+.contact__social-media .instagram:hover svg {
     fill: url(#instagram-gradient);
 }
 
