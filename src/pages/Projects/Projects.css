@@ -1,0 +1,20 @@
+.projects {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.projects > * {
+    display: block;
+}
+
+.projects h1 {
+    font-size: clamp(48px, 14vw, 70px);
+}
+
+.projects h1 + code {
+    margin-bottom: 30px;
+}
+
+.projects h1 strong {
+    color: var(--primary-color);
+}
