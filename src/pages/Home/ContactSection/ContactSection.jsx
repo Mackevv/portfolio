@@ -71,12 +71,12 @@ function ContactSection() {
           <HTMLTag name="div" className="social-media">
             <ul className="contact__social-media">
               <li className="twitter">
-                <a href="https://twitter.com/mackevvv" target="_blank" rel="noreferrer">
+                <a href="https://twitter.com/mackevvv" className="link" target="_blank" rel="noreferrer">
                   <Icon name="twitter" size={30}/>
                 </a>
               </li>
               <li className="instagram">
-                <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <a href="https://instagram.com" className="link" target="_blank" rel="noreferrer">
                   <Icon name="instagram" size={30}/>
                   <svg width="0" height="0">
                     <defs>
@@ -92,7 +92,7 @@ function ContactSection() {
                 </a>
               </li>
               <li className="github">
-                <a href="https://github.com/Mackevv" target="_blank" rel="noreferrer">
+                <a href="https://github.com/Mackevv" className="link" target="_blank" rel="noreferrer">
                   <Icon name="github" size={30}/>
                 </a>
               </li>

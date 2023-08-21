@@ -5,7 +5,7 @@ function Button({ btnType = "button", btnStyle, disabled, children, onClick, ...
   return (
     <button
       type={btnType}
-      className={`btn btn-${btnStyle}`}
+      className={`btn btn-${btnStyle} link`}
       disabled={disabled}
       onClick={onClick}
       {...rest}

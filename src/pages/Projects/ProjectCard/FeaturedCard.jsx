@@ -7,7 +7,7 @@ function FeaturedCard({ title, description, image, imageAlt, link, tags }) {
     <div className="featured-card">
       <div className="featured-card__image">
         <div className="featured-card__image-wrapper">
-          <a href={link} rel="noreferrer" target="_blank">
+          <a href={link} rel="noreferrer" className="link" target="_blank">
             <img src={image} alt={imageAlt}/>
           </a>
         </div>
@@ -23,7 +23,7 @@ function FeaturedCard({ title, description, image, imageAlt, link, tags }) {
           ))}
         </div>
         <div className="glass glass-top">
-          <a href={link} rel="noreferrer" target="_blank">
+          <a href={link} className="link" rel="noreferrer" target="_blank">
             <Icon name="github" size={45}/>
           </a>
         </div>
