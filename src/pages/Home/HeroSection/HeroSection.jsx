@@ -1,8 +1,8 @@
 import React from 'react';
-import useWindowResize from "hooks/useWindowResize";
-import HTMLTag from "components/HTMLTag/HTMLTag";
+import useWindowResize from "@/hooks/useWindowResize";
+import HTMLTag from "@/components/HTMLTag/HTMLTag";
 import "./HeroSection.css";
-import { ReactComponent as Logo } from 'assets/logo.svg';
+import Logo from '@/assets/logo.svg?react'
 
 function HeroSection() {
   const width = useWindowResize(window.innerWidth);

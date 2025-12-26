@@ -1,6 +1,6 @@
 import React from 'react';
 import "./FeaturedCard.css";
-import Icon from "components/Icon";
+import Icon from "@/components/Icon";
 
 function FeaturedCard({ title, description, image, imageAlt, link, tags }) {
   return (

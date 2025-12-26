@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import emailjs from "@emailjs/browser";
-import validator from "utils/validator";
-import SectionTitle from "components/SectionTitle/SectionTitle";
-import HTMLTag from "components/HTMLTag/HTMLTag";
-import Icon from "components/Icon";
-import Button from "components/Button/Button";
+import validator from "@/utils/validator";
+import SectionTitle from "@/components/SectionTitle/SectionTitle";
+import HTMLTag from "@/components/HTMLTag/HTMLTag";
+import Icon from "@/components/Icon";
+import Button from "@/components/Button/Button";
 import "./ContactSection.css";
 
 function ContactSection() {
   const formRef = useRef();
 
-  const serviceId = process.env.REACT_APP_SERVICE_ID,
-    templateId = process.env.REACT_APP_TEMPLATE_ID,
-    publicKey = process.env.REACT_APP_PUBLIC_KEY;
+  const serviceId = import.meta.env.VITE_SERVICE_ID,
+    templateId = import.meta.env.VITE_TEMPLATE_ID,
+    publicKey = import.meta.env.VITE_PUBLIC_KEY;
 
   const [contact, setContact] = useState({
     name: "",

@@ -1,6 +1,6 @@
 import React from 'react';
-import HTMLTag from "components/HTMLTag/HTMLTag";
-import Icon from "components/Icon";
+import HTMLTag from "@/components/HTMLTag/HTMLTag";
+import Icon from "@/components/Icon";
 import "./Footer.css";
 
 function Footer() {

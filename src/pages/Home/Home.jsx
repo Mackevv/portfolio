@@ -1,8 +1,8 @@
 import React from 'react';
 import HeroSection from "./HeroSection/HeroSection";
-import HTMLTag from "components/HTMLTag/HTMLTag";
-import SectionTitle from "components/SectionTitle/SectionTitle";
-import TransitionLine from "components/TransitionLine/TransitionLine";
+import HTMLTag from "@/components/HTMLTag/HTMLTag";
+import SectionTitle from "@/components/SectionTitle/SectionTitle";
+import TransitionLine from "@/components/TransitionLine/TransitionLine";
 import ContactSection from "./ContactSection/ContactSection";
 import "./Home.css";
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import FeaturedCard from "./ProjectCard/FeaturedCard";
-import HTMLTag from "components/HTMLTag/HTMLTag";
-import Portfolio from "assets/images/projects/mackevportfolio.jpg"
-import DragonBallZ from "assets/images/projects/dragonballz.jpg";
-import Totoro from "assets/images/projects/totoro.jpg";
+import HTMLTag from "@/components/HTMLTag/HTMLTag";
+import Portfolio from "@/assets/images/projects/mackevportfolio.jpg"
+import DragonBallZ from "@/assets/images/projects/dragonballz.jpg";
+import Totoro from "@/assets/images/projects/totoro.jpg";
 import "./Projects.css";
 
 function Projects() {
