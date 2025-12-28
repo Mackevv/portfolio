@@ -1,0 +1,20 @@
+.blog {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.blog > * {
+    display: block;
+}
+
+.blog h1 {
+    font-size: clamp(48px, 14vw, 70px);
+}
+
+.blog h1 + code {
+    margin-bottom: 30px;
+}
+
+.blog h1 strong {
+    color: var(--primary-color);
+}

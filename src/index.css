@@ -91,7 +91,7 @@ p {
     background-repeat: repeat-y;
     background-size: clamp(280px, 38vw, 404px);
     pointer-events: none;
-    z-index: -100;
+    z-index: -50;
 }
 
 #page-wrapper::after {
@@ -107,7 +107,7 @@ p {
     background-position: right;
     background-size: clamp(280px, 38vw, 404px);
     pointer-events: none;
-    z-index: -100;
+    z-index: -50;
 }
 
 @media only screen and (max-width: 900px) {
@@ -136,5 +136,12 @@ p {
 }
 
 .link {
-    cursor: url('./assets/icons/hand-cursor.svg'), auto;
+  cursor: url('./assets/icons/hand-cursor.svg'), auto;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--primary-color);
+    transition: color 0.3s;
+  }
 }

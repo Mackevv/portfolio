@@ -70,11 +70,6 @@ function ContactSection() {
         <div className="contact__social-media--container">
           <HTMLTag name="div" className="social-media">
             <ul className="contact__social-media">
-              <li className="twitter">
-                <a href="https://twitter.com/mackevvv" className="link" target="_blank" rel="noreferrer">
-                  <Icon name="twitter" size={30}/>
-                </a>
-              </li>
               <li className="instagram">
                 <a href="https://instagram.com" className="link" target="_blank" rel="noreferrer">
                   <Icon name="instagram" size={30}/>

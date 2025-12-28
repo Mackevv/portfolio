@@ -20,7 +20,7 @@ function HeroSection() {
           <br/>
           <HTMLTag name="p">
             <p>
-              I am a french self-taught developer interested in <strong>programming</strong> and <strong>new technologies</strong>
+              I am a french first year <strong>computer science</strong> student at <strong>Ensimag</strong>
             </p>
           </HTMLTag>
         </div>

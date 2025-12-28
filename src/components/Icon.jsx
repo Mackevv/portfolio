@@ -5,7 +5,7 @@ function Icon({ name, size = null , ...rest}) {
 
   return (
     <svg className="icon" {...sizes} {...rest}>
-      <use xlinkHref={`/sprite.svg#${name}`}></use>
+      <use href={`/sprite.svg#${name}`}></use>
     </svg >
   )
 }

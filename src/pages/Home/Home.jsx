@@ -16,16 +16,15 @@ function Home() {
           <div className="about__content">
             <HTMLTag name="p">
               <p>
-                Hello! My name is Kevin and I am a young french developer. I enjoy creating things on the Internet and always
-                want to learn more about new technologies such as artificial intelligence.
-                Although it’s not my favorite activity, I am also interested in graphic and UI/UX design.
+                Hello! I am currently a first year computer science student at <a href="https://ensimag.grenoble-inp.fr/en" rel="noreferrer nofollow" className="link">Ensimag</a>, 
+                an engineer school located in Grenoble, France. My current center of
+                interests are cybersecurity and electronics but I also studied
+                general mathematics, physics and computer science theory during two years
+                in CPGE.
               </p>
               <p>
-                My favorites technologies to build website are JavaScript (TypeScript), Node.js, React, Sass.
-              </p>
-              <p>
-                Outside programming, I like practicing daily calisthenics to remain in a good shape,
-                read manga and watch anime during my free time.
+                I am interested in space exploration, hence I would like
+                to build a professionnal carreer around the space industry.
               </p>
             </HTMLTag>
           </div>

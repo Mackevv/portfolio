@@ -16,9 +16,6 @@ function Footer() {
           2022 &copy; Website designed and built by Kevin Macé
         </div>
         <div className="footer-social-media">
-          <a href="https://twitter.com/mackevvv" className="link" target="_blank" rel="noreferrer">
-            <Icon name="twitter" size={20} />
-          </a>
           <a href="https://instagram.com" className="link" target="_blank" rel="noreferrer">
             <Icon name="instagram" size={20} />
           </a>

@@ -143,17 +143,7 @@
     </path>
   </symbol>
   <symbol xmlnsDc="http://purl.org/dc/elements/1.1/" xmlnsCc="http://creativecommons.org/ns#" xmlnsRdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlnsSvg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="c" sodipodiDocname="icons8-c-programming.svg" inkscapeVersion="1.0.1 (3bc2e813f5, 2020-09-07)" viewBox="0 0 38.000089 42.000031">
-    <metadata id="metadata16">
-      <rdf:RDF>
-        <cc:Work rdfAbout="">
-          <dc:format>image/svg+xml</dc:format>
-          <dc:type rdfResource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-          <dc:title></dc:title>
-        </cc:Work>
-      </rdf:RDF>
-    </metadata>
     <defs id="defs14"></defs>
-    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscapePageopacity="0" inkscapePageshadow="2" inkscapeWindowWidth="1920" inkscapeWindowHeight="1056" id="namedview12" showgrid="false" fitMarginTop="0" fitMarginLeft="0" fitMarginRight="0" fitMarginBottom="0" inkscapeZoom="1.4895833" inkscapeCx="190" inkscapeCy="210.00282" inkscapeWindowX="0" inkscapeWindowY="0" inkscapeWindowMaximized="1" inkscapeCurrentLayer="svg10"></sodipodi:namedview>
     <path fill="#283593" fill-rule="evenodd" d="m 17.903,0.28628166 c 0.679,-0.381 1.515,-0.381 2.193,0 C 23.451,2.1692817 33.547,7.8372817 36.903,9.7202817 37.582,10.100282 38,10.804282 38,11.566282 c 0,3.766 0,15.101 0,18.867 0,0.762 -0.418,1.466 -1.097,1.847 -3.355,1.883 -13.451,7.551 -16.807,9.434 -0.679,0.381 -1.515,0.381 -2.193,0 -3.355,-1.883 -13.451,-7.551 -16.807,-9.434 -0.678,-0.381 -1.096,-1.084 -1.096,-1.846 0,-3.766 0,-15.101 0,-18.867 0,-0.762 0.418,-1.466 1.097,-1.8470003 3.354,-1.883 13.452,-7.551 16.806,-9.43400004 z" clip-rule="evenodd" id="path2"></path>
     <path fill="#5c6bc0" fill-rule="evenodd" d="m 0.304,31.404282 c -0.266,-0.356 -0.304,-0.694 -0.304,-1.149 0,-3.744 0,-15.014 0,-18.759 0,-0.758 0.417,-1.458 1.094,-1.8360003 3.343,-1.872 13.405,-7.507 16.748,-9.38000004 0.677,-0.379 1.594,-0.371 2.271,0.008 3.343,1.87200004 13.371,7.45900004 16.714,9.33100004 0.27,0.152 0.476,0.335 0.66,0.5760003 z" clip-rule="evenodd" id="path4"></path>
     <path fill="#ffffff" fill-rule="evenodd" d="m 19,7.0002817 c 7.727,0 14,6.2730003 14,14.0000003 0,7.727 -6.273,14 -14,14 -7.727,0 -14,-6.273 -14,-14 0,-7.727 6.273,-14.0000003 14,-14.0000003 z m 0,7.0000003 c 3.863,0 7,3.136 7,7 0,3.863 -3.137,7 -7,7 -3.863,0 -7,-3.137 -7,-7 0,-3.864 3.136,-7 7,-7 z" clip-rule="evenodd" id="path6"></path>
