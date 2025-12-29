@@ -7,6 +7,14 @@
     margin: 100px 0;
 }
 
+.featured-card:nth-child(1) {
+  margin-top: 30px;
+}
+
+.featured-card:last-child {
+  margin-bottom: 30px;
+}
+
 .featured-card:nth-of-type(2n+1) .featured-card__image {
     grid-column: 1 / 8;
 }

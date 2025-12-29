@@ -1,0 +1,31 @@
+.files,
+.project-dir {
+  font-family: "Consolas", "Fira Code", "JetBrains Mono", "Source Code Pro", sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: var(--black);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-dir span {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.project-dir:hover span {
+  color: var(--primary-color);
+}
+
+.project-dir:hover svg {
+  color: var(--primary-color);
+}
+
+.files {
+  flex-direction: column;
+  align-items: normal;
+  padding-left: 30px;
+}

@@ -1,0 +1,17 @@
+.project-file {
+  display: flex;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.project-file span {
+  margin-left: 10px;
+}
+
+.project-file:hover span {
+  color: var(--primary-color);
+}
+
+.project-file:hover svg {
+  color: var(--primary-color);
+}

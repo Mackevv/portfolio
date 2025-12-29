@@ -1,20 +1,28 @@
-.projects {
-    margin-top: 150px;
-    margin-bottom: 50px;
-}
-
-.projects > * {
+.pinned-projects > * {
     display: block;
 }
 
-.projects h1 {
+.projects__hero-header {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.projects__hero-header h1 {
     font-size: clamp(48px, 14vw, 70px);
 }
 
-.projects h1 + code {
+.projects__hero-header h1 + code {
     margin-bottom: 30px;
 }
 
-.projects h1 strong {
+.projects__hero-header h1 strong {
     color: var(--primary-color);
+}
+
+.pinned-projects + code + div {
+  margin: 50px 0;
+}
+
+.projects-tree + code {
+  margin-bottom: 100px;
 }

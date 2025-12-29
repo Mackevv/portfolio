@@ -71,7 +71,7 @@ function ContactSection() {
           <HTMLTag name="div" className="social-media">
             <ul className="contact__social-media">
               <li className="instagram">
-                <a href="https://instagram.com" className="link" target="_blank" rel="noreferrer">
+                <a href="https://instagram.com/ma.ckev?igsh=MTNuM2F5N3ViNTA5Ng==" className="link" target="_blank" rel="noreferrer">
                   <Icon name="instagram" size={30}/>
                   <svg width="0" height="0">
                     <defs>
