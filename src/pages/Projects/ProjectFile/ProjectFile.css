@@ -1,11 +1,21 @@
 .project-file {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 3px 0;
 }
 
-.project-file span {
-  margin-left: 10px;
+.project-file > div {
+  display: flex;
+  align-items: center;
+}
+
+.project-file__head span {
+  margin-left: 5px;
+}
+
+.project-file__info span {
+  margin: 0 10px;
 }
 
 .project-file:hover span {
@@ -14,4 +24,56 @@
 
 .project-file:hover svg {
   color: var(--primary-color);
+}
+
+.project-popup__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-popup__header--link-exist {
+  text-decoration: underline;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.project-popup__header--link-exist:hover {
+  text-decoration-color: var(--primary-color);
+  transition: text-decoration-color 0.2s ease;
+}
+
+.project-popup__header span:first-child {
+  margin-right: 10px;
+}
+
+.project-popup__content > p {
+  margin: 10px 0;
+}
+
+.project-popup__github-link {
+  font-weight: 600;
+  display: flex;
+  align-items: end;
+  margin-top: 30px;
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+
+.project-popup__github-link a {
+  margin-left: 10px;
+}
+
+.project-popup__github-link:hover svg {
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+}
+
+.project-popup__content h3 {
+  margin: 20px 0;
+}
+
+.project-popup__techstack {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  gap: 20px;
 }

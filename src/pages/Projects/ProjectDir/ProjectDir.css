@@ -3,12 +3,22 @@
   font-family: "Consolas", "Fira Code", "JetBrains Mono", "Source Code Pro", sans-serif;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   margin: 5px 0;
   background-color: var(--black);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 3px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-dir__head {
+  display: flex;
+  align-items: center;
+}
+
+.project-dir__info {
+  margin-right: 10px;
 }
 
 .project-dir span {
