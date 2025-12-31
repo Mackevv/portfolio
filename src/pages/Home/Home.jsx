@@ -17,14 +17,15 @@ function Home() {
             <HTMLTag name="p">
               <p>
                 Hello! I am currently a first year computer science student at <a href="https://ensimag.grenoble-inp.fr/en" rel="noreferrer nofollow" className="link">Ensimag</a>, 
-                an engineer school located in Grenoble, France. My current center of
-                interests are cybersecurity and electronics but I also studied
-                general mathematics, physics and computer science theory during two years
-                in CPGE.
+                an engineering school located in Grenoble, France. My current
+                interests are cybersecurity and electronics but I am always 
+                willing to learn new science related things. I also studied general 
+                mathematics, physics and computer science theory during two years in 
+                CPGE.
               </p>
               <p>
-                I am interested in space exploration, hence I would like
-                to build a professionnal carreer around the space industry.
+                I am interested in space exploration, therefore I would like
+                to build a professionnal career around the space industry.
               </p>
             </HTMLTag>
           </div>
