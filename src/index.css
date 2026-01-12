@@ -146,6 +146,10 @@ p {
   transition: color 0.3s;
 }
 
+.link:hover > svg {
+  color: var(--white);
+}
+
 .icon-png {
   object-fit: contain; /* keeps aspect ratio */
 }
