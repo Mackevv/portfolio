@@ -1,0 +1,65 @@
+.code {
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  margin: 1.5rem 0;
+}
+
+.code pre {
+  background: var(--black);
+  color: #e5e7eb;
+  padding: 1rem 1.25rem;
+  border: 1px solid #575757;
+  border-radius: 12px;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+
+.inline-code {
+  background: #f1f5f9;
+  color: #0f172a;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-size: 0.85em;
+}
+
+.code__copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.code__copy-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Line numbers */
+pre code.show-line-number > span {
+  display: block;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+pre code.show-line-number > span::before {
+  counter-increment: line;
+  content: counter(line);
+  position: absolute;
+  left: -3.2rem;
+  width: 2.5rem;
+  text-align: right;
+  color: #64748b;
+  user-select: none;
+}
+
+/* Highlight.js tweaks */
+.hljs {
+  background: transparent;
+}

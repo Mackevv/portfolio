@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "@/pages/Home/Home";
 import Blog from "@/pages/Blog/Blog";
+import Post from "@/pages/Blog/Post";
 import Projects from "@/pages/Projects/Projects";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/post/:slug" element={<Post />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>

@@ -153,3 +153,8 @@ p {
 .icon-png {
   object-fit: contain; /* keeps aspect ratio */
 }
+
+li::marker {
+  color: var(--primary-color);
+  font-weight: 400;
+}

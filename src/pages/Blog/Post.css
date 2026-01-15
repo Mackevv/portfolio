@@ -1,0 +1,45 @@
+.post {
+  margin-top: 150px;
+  margin-bottom: 100px; 
+}
+
+.post h1 {
+  font-size: 48px;
+}
+
+.post h1 span {
+  color: var(--primary-color);
+}
+
+.post h2 {
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+.post ul li > ul {
+  margin-left: 15px;
+}
+
+.post img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.post .image-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+  counter-increment: figure;
+}
+
+.post .image-wrapper figcaption::before {
+  content: "Figure " counter(figure) ". ";
+  font-weight: 500;
+}
+
+.post .image-wrapper figcaption {
+  text-align: center;
+}
