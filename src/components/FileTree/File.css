@@ -1,28 +1,28 @@
-.project-file {
+.file {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3px 0;
 }
 
-.project-file > div {
+.file > div {
   display: flex;
   align-items: center;
 }
 
-.project-file__head span {
+.file__head span {
   margin-left: 5px;
 }
 
-.project-file__info span {
+.file__info span {
   margin: 0 10px;
 }
 
-.project-file:hover span {
+.file:hover span {
   color: var(--primary-color);
 }
 
-.project-file:hover svg {
+.file:hover svg {
   color: var(--primary-color);
 }
 

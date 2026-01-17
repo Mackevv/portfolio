@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FeaturedCard from "./ProjectCard/FeaturedCard";
-import ProjectDir from "./ProjectDir/ProjectDir";
-import ProjectFile from "./ProjectFile/ProjectFile";
+import Folder from "@/components/FileTree/Folder";
+import ProjectFile from "./ProjectFile";
 import ProjectPopup from "./ProjectPopup/ProjectPopup";
 import HTMLTag from "@/components/HTMLTag/HTMLTag";
 import TransitionLine from "@/components/TransitionLine/TransitionLine";
@@ -102,7 +102,7 @@ function Projects() {
       <TransitionLine />
       <HTMLTag name="section" className="projects-tree">
         <section className="projects-tree">
-          <ProjectDir dirname="web" >
+          <Folder dirname="web" >
             {webProjects.map(project => ( 
               <ProjectFile
                 key={project.name}
@@ -118,8 +118,8 @@ function Projects() {
                 onClose={closePopup}
               />
             ))}
-          </ProjectDir>
-          <ProjectDir dirname="electronics">
+          </Folder>
+          <Folder dirname="electronics">
             {electronicsProjects.map(project => (
               <ProjectFile
                 key={project.name}
@@ -135,7 +135,7 @@ function Projects() {
                 onClose={closePopup}
               />
             ))}
-          </ProjectDir>
+          </Folder>
         </section>
        </HTMLTag>
     </div>

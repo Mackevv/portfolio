@@ -1,5 +1,5 @@
 .files,
-.project-dir {
+.folder {
   font-family: "Consolas", "Fira Code", "JetBrains Mono", "Source Code Pro", sans-serif;
   display: flex;
   align-items: center;
@@ -12,25 +12,25 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.project-dir__head {
+.folder__head {
   display: flex;
   align-items: center;
 }
 
-.project-dir__info {
+.folder__info {
   margin-right: 10px;
 }
 
-.project-dir span {
+.folder span {
   font-weight: 600;
   margin-left: 10px;
 }
 
-.project-dir:hover span {
+.folder:hover span {
   color: var(--primary-color);
 }
 
-.project-dir:hover svg {
+.folder:hover svg {
   color: var(--primary-color);
 }
 

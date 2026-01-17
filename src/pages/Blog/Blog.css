@@ -18,3 +18,12 @@
 .blog h1 strong {
     color: var(--primary-color);
 }
+
+.blog-list li {
+  display: block;
+  margin: 16px 0;
+}
+
+.blog-list li h2 {
+  font-size: 22px;
+}
