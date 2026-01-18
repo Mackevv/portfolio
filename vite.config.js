@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitest/config'
-import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
 import react from '@vitejs/plugin-react-swc'
 import svgr from "vite-plugin-svgr"
 import path from "path"
@@ -9,7 +9,8 @@ export default defineConfig({
   base: '/',
   plugins: [
     react(),
-    svgr()
+    svgr(),
+    nodePolyfills()
   ],
   test: {
     globals: true,
@@ -27,18 +28,6 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "src")
     },
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      define: {
-        global: 'globalThis'
-      },
-      plugins: [
-        NodeGlobalsPolyfillPlugin({
-          buffer: true
-        })
-      ]
-    }
   }
 })
 
